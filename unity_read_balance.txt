@@ -1,0 +1,4 @@
+IIndexer polygonIndexer = new ChainIndexer(Chain.Polygon);
+Address address = new Address("0x00");
+EtherBalance balance = await polygonIndexer.GetEtherBalance(address);
+BigInteger balanceInWei = balance.balanceWei;
